@@ -1,0 +1,21 @@
+{
+  "name": "reservation-calendar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reservation calendar for hobby groups",
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,green \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "lint": "npm --prefix client run lint && npm --prefix server run lint",
+    "format": "prettier --write .",
+    "test": "npm --prefix server run test",
+    "install:all": "npm install && npm --prefix client install && npm --prefix server run install:py"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "prettier": "^3.4.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
