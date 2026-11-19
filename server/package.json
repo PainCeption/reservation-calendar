@@ -1,0 +1,15 @@
+{
+  "name": "reservation-calendar-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Flask API + SQLite. This package.json only wraps Python commands as npm scripts; activate the virtual environment in server/.venv first.",
+  "scripts": {
+    "dev": "flask --app src run --debug --port 5000",
+    "test": "pytest",
+    "lint": "ruff check .",
+    "format": "ruff format .",
+    "install:py": "pip install -r requirements-dev.txt",
+    "db:init": "python scripts/init_db.py",
+    "db:seed": "python scripts/seed_demo.py"
+  }
+}

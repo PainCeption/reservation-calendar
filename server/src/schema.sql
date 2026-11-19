@@ -1,0 +1,6 @@
+-- Database schema. Not implemented yet.
+-- Tables (see SUMMARY.md section 4):
+--   users    (name, unique email, password hash, role)
+--   targets  (activity name, description, location, owning organizer)
+--   slots    (activity, start time UTC, end time UTC, max capacity)
+--   bookings (slot, member, created at; UNIQUE (slot, member))
